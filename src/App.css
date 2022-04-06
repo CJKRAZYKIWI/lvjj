@@ -1,38 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 .App {
-  text-align: center;
+    font-family: 'Rubik', sans-serif; 
+    background-color: rgb(243, 233, 233); 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Card {
+    padding: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.CardTitle {
+   text-align: center;
+}
+
+.CardText, .CardButton {
+    text-align: center;
+}
+
+.coverPhoto {
+    text-align: center;
+    z-index: 1;
+    color: white;
+
+}
+
+.textOnCover {
+    position: absolute;
+    right: 53%;
+    top: 26%;
   }
+
+.btnOnCover {
+    position: absolute;
+    right: 65%;
+    top: 33%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.NavBar {
+    font-size: 18px;
+    outline: solid black;
+    padding: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+/* .card {
+    box-shadow: 5px 5px 20px 1px
+} */
+
+/* .resumeBody {
+    padding-top: 115px;
+} */
+
+.titles {
+    padding: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .contactPhoto {
+    z-index: 1;
+    text-align: center;
+}
+
+.contactHeader {
+    position: absolute;
+    right: 55%;
+    top: 10%;
+} */
+
+.cardBody {
+    background-color: rgb(243, 233, 233); 
+    padding-top: 30px;
+}
+
+.newsBody, .bruceBody, .scheduleBody {
+    background-color: white;
+}
+
+.pageFooter {
+    margin-top: 10px;
 }
