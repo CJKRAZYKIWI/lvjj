@@ -2,7 +2,8 @@
 
 .App {
     font-family: 'Rubik', sans-serif; 
-    background-color: rgb(243, 233, 233); 
+    background-color: #000000; 
+    color: white;
 }
 
 .Card {
@@ -17,63 +18,104 @@
     text-align: center;
 }
 
-.coverPhoto {
-    text-align: center;
-    z-index: 1;
-    color: white;
-
-}
-
-.textOnCover {
-    position: absolute;
-    right: 53%;
-    top: 26%;
-  }
-
-.btnOnCover {
-    position: absolute;
-    right: 65%;
-    top: 33%;
-}
-
 .NavBar {
     font-size: 18px;
-    outline: solid black;
     padding: 25px;
 }
-
-/* .card {
-    box-shadow: 5px 5px 20px 1px
-} */
-
-/* .resumeBody {
-    padding-top: 115px;
-} */
 
 .titles {
     padding: 25px;
 }
 
-/* .contactPhoto {
-    z-index: 1;
-    text-align: center;
-}
-
-.contactHeader {
-    position: absolute;
-    right: 55%;
-    top: 10%;
-} */
-
 .cardBody {
-    background-color: rgb(243, 233, 233); 
+    background-color: #black; 
     padding-top: 30px;
-}
-
-.newsBody, .bruceBody, .scheduleBody {
-    background-color: white;
 }
 
 .pageFooter {
     margin-top: 10px;
+    background-color: #1B1B1B;
+}
+
+/*******************
+    HOME/COVER
+*******************/
+
+#coverPhotoContainer {
+    background-color: #1B1B1B;
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#coverPhoto {
+    text-align: center;
+    max-width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+#textOnCover {
+    text-align: center;
+}
+
+/* .btnOnCover {
+    position: absolute;
+    right: 65%;
+    top: 33%;
+} */
+
+#btnOnCover {
+    text-align: center;
+}
+
+.newsBody {
+    background-color: black;
+}
+
+.cardBackground {
+    background-color: #1B1B1B !important;
+}
+
+/*******************
+    Instructors
+*******************/
+#zamoraContainer {
+    background-color: #1B1B1B;
+    border-radius: 16px;
+    margin-top: 35px;
+}
+
+
+#bruceContainer {
+    background-color: #1B1B1B;
+    border-radius: 16px;
+}
+
+.bruceBody {
+    background-color: #000000;
+}
+
+/*******************
+    SCHEDULE
+*******************/
+
+tr, th {
+    background-color:#1B1B1B;
+    color: white !important;
+}
+
+#notTargeted {
+    color: rgb(139, 139, 139) !important;
+}
+
+#classTime {
+    color: white;
 }

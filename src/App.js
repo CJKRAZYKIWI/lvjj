@@ -41,20 +41,18 @@ function App() {
       <div className="App">
       <BrowserRouter>
       <header>
-        <Navbar bg="white" expand="lg" sticky="top" className="NavBar">
-            <Navbar.Brand href="/"><img src={process.env.PUBLIC_URL + './images/lvjj.png'} height="55" width="55" /> Las Vegas Jiu-Jitsu</Navbar.Brand>
+        <Navbar bg="dark" expand="lg" sticky="top" className="NavBar">
+            <Navbar.Brand href="/" style={{color:"white"}}><img src={process.env.PUBLIC_URL + './images/lvjj.png'} height="55" width="55" /> Las Vegas Jiu-Jitsu</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
             </Navbar.Collapse>
               <Nav className="justify-content-right">
-                <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/About">About</Nav.Link>
-                <Nav.Link href="/Instructors">Instructors</Nav.Link>
-                <Nav.Link href="/Schedule">Schedule</Nav.Link>
-                <Nav.Link href="/News">News</Nav.Link>
-                <Nav.Link href="/Contact">Contact</Nav.Link>
-                <Nav.Link href="/Shop" disabled>Shop</Nav.Link>
-                <Button variant="primary" href='{Contact />}'>Log In</Button>{' '}
+                <Nav.Link href="/" style={{color:"white"}}>Home</Nav.Link>
+                <Nav.Link href="/About" style={{color:"white"}}>About</Nav.Link>
+                <Nav.Link href="/Instructors" style={{color:"white"}}>Instructors</Nav.Link>
+                <Nav.Link href="/Schedule" style={{color:"white"}}>Schedule</Nav.Link>
+                <Nav.Link href="/News" style={{color:"white"}}>News</Nav.Link>
+                <Nav.Link href="/Contact" style={{color:"white"}}>Contact</Nav.Link>
               </Nav>
         </Navbar>
 

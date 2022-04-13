@@ -11,7 +11,7 @@ export default function News() {
     <h1>News</h1>
       <Row>
         <Col md={{ span: 6, offset: 4 }} >
-          <Card style={{ width: '25rem' }} border="light">
+          <Card style={{ width: '25rem' }} border="light" className="cardBackground">
             <Card.Img variant="top" src="./images/sponsorship.jpg" />
             <Card.Body>
               <Card.Title>Steve Dimopoulos sends 10 students to Connecticut Seminar</Card.Title>

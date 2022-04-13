@@ -23,8 +23,8 @@ export default function Schedule() {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>9:30am</td>
-                        <td>Open Mat*</td>
+                        <td id="notTargeted">9:30am</td>
+                        <td id="classTime">Open Mat*</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -43,7 +43,7 @@ export default function Schedule() {
                         <td></td>
                     </tr>
                     <tr>
-                        <td>11:00</td>
+                        <td id="notTargeted">11:00</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -63,7 +63,7 @@ export default function Schedule() {
                         <td></td>
                     </tr>
                     <tr>
-                        <td>1:00</td>
+                        <td id="notTargeted">1:00</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -83,7 +83,7 @@ export default function Schedule() {
                         <td></td>
                     </tr>
                     <tr>
-                        <td>3:00</td>
+                        <td id="notTargeted">3:00</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -103,7 +103,7 @@ export default function Schedule() {
                         <td></td>
                     </tr>
                     <tr>
-                        <td>5:00</td>
+                        <td id="notTargeted">5:00</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -123,21 +123,21 @@ export default function Schedule() {
                         <td></td>
                     </tr>
                     <tr>
-                        <td>6:30</td>
+                        <td id="notTargeted">6:30</td>
                         <td></td>
-                        <td>Gi Adults BJJ
+                        <td id="classTime">Gi Adults BJJ
                             <br />6:30 - 8pm
                         </td>
-                        <td>No-Gi Adults BJJ
+                        <td id="classTime">No-Gi Adults BJJ
                             <br />6:30 - 8pm
                         </td>
-                        <td>Gi Adults BJJ
+                        <td id="classTime">Gi Adults BJJ
                             <br />6:30 - 8pm
                         </td>
-                        <td>Gi Adults BJJ
+                        <td id="classTime">Gi Adults BJJ
                             <br />6:30 - 8pm
                         </td>
-                        <td>No-Gi Adults BJJ
+                        <td id="classTime">No-Gi Adults BJJ
                             <br />6:30 - 8pm
                         </td>
                         <td></td>
@@ -153,13 +153,13 @@ export default function Schedule() {
                         <td></td>
                     </tr>
                     <tr>
-                        <td>8:00</td>
+                        <td id="notTargeted">8:00</td>
                         <td></td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
+                        <td id="notTargeted">-</td>
+                        <td id="notTargeted">-</td>
+                        <td id="notTargeted">-</td>
+                        <td id="notTargeted">-</td>
+                        <td id="notTargeted">-</td>
                         <td></td>
                     </tr>
                 </tbody>

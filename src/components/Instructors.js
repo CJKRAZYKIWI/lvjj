@@ -7,7 +7,7 @@ export default function Instructors() {
 
     return (
     <div style={{ textAlign: 'center' }}>
-        <Container>
+        <Container id="zamoraContainer">
         <h1>Cresencio Zamora</h1>
         <h5>Founder & Head Professor</h5>
         <br />
@@ -16,14 +16,13 @@ export default function Instructors() {
             <img src={process.env.PUBLIC_URL + './images/zamora.jpg'} height="505px" width="505px" />
             </Col>
                 <Col className="resumeBody">
-                    <h4>Titles:</h4>
-                    <h4 className="titles">• 2014 IBJJF World NoGi Champion</h4>
-                    <h4 className="titles">• 2016 IBJJF World Champion</h4>
-                    <h4 className="titles">• 2015 SJJIF World Champion</h4>
-                    <h4 className="titles">• 2017 JJWL World Champion</h4>
+                    <h3>Titles:</h3>
+                    <h5 className="titles">• 2014 IBJJF World NoGi Champion</h5>
+                    <h5 className="titles">• 2016 IBJJF World Champion</h5>
+                    <h5 className="titles">• 2015 SJJIF World Champion</h5>
+                    <h5 className="titles">• 2017 JJWL World Champion</h5>
                 </Col>
         </Row>
-        </Container>
         <br />
         <Container>
             <Row>
@@ -33,9 +32,11 @@ export default function Instructors() {
             </Col>
             </Row>
         </Container>
+        </Container>
         <div  className="bruceBody">
         <br />
-        <Container>
+        <br />
+        <Container id="bruceContainer">
         <h1>Bruce Morgenstern</h1>
         <h3>Black Belt • Instructor</h3>
         <br />
@@ -51,15 +52,16 @@ export default function Instructors() {
                     <h4 className="titles">• 2017 JJWL World Champion</h4>
                 </Col>
         </Row>
-        </Container>
+        
         <br />
-        <Container>
-            <Row>
-            <Col>
-                <p>Professor Bruce Morgenstern is 2nd degree black belt and received his black belt under Amilcar Cipili. He is a highly decorated jiu jitsu black belt and has over 90 medals during his career.</p>
+            <Container>
+                <Row>
+                <Col>
+                    <p>Professor Bruce Morgenstern is 2nd degree black belt and received his black belt under Amilcar Cipili. He is a highly decorated jiu jitsu black belt and has over 90 medals during his career.</p>
                 <p>He currently resides in Las Vegas, NV and is the founder and head instructor of Las Vegas Jiu-Jitsu.</p>
-            </Col>
-            </Row>
+                </Col>
+                </Row>
+            </Container>
         </Container>
         <br />
         <br />
