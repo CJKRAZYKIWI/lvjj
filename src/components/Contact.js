@@ -28,8 +28,10 @@ export default function Contact() {
 
     return (
     <div style={{ textAlign: 'center' }}>
-        <h1 className="contactHeader">Contact Us</h1>
+        <br />
+        <h1 className="contactHeader">Try a class</h1>
         <Form onSubmit={sendEmail}></Form>
+        <br /><br /><br /><br />
         <Container>
         <Form>
              <Form>
@@ -60,7 +62,7 @@ export default function Contact() {
                     <Form.Label>Message</Form.Label>
                     <Form.Control as="textarea" rows={3} />
                 </Form.Group>
-    
+                <br />
                 <Button variant="primary" type="submit" value="Send">Submit</Button>
                 <br />
                 <br />

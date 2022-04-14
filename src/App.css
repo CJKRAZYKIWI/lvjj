@@ -21,16 +21,13 @@
 .NavBar {
     font-size: 18px;
     padding: 25px;
+    background-color: #1B1B1B;
 }
 
 .titles {
     padding: 25px;
 }
 
-.cardBody {
-    background-color: #black; 
-    padding-top: 30px;
-}
 
 .pageFooter {
     margin-top: 10px;

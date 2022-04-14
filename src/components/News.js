@@ -8,10 +8,10 @@ import Button from 'react-bootstrap/Button'
 export default function News() {
     return (
     <div style={{ textAlign: 'center' }}>
-    <h1>News</h1>
+    <h1>Team News</h1>
       <Row>
-        <Col md={{ span: 6, offset: 4 }} >
-          <Card style={{ width: '25rem' }} border="light" className="cardBackground">
+        <Col md={{ span: 6, offset: 1 }} >
+          <Card style={{ width: '25rem' }} className="cardBackground">
             <Card.Img variant="top" src="./images/sponsorship.jpg" />
             <Card.Body>
               <Card.Title>Steve Dimopoulos sends 10 students to Connecticut Seminar</Card.Title>
@@ -21,6 +21,10 @@ export default function News() {
           </Card>  
         </Col>
       </Row>
+    
+    <br /><br /><br /><br /><br /><br /><br />
+    <br />
+    <br />
     <br />
     </div>
     )

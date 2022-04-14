@@ -41,7 +41,7 @@ function App() {
       <div className="App">
       <BrowserRouter>
       <header>
-        <Navbar bg="dark" expand="lg" sticky="top" className="NavBar">
+        <Navbar className="NavBar" expand="lg" sticky="top">
             <Navbar.Brand href="/" style={{color:"white"}}><img src={process.env.PUBLIC_URL + './images/lvjj.png'} height="55" width="55" /> Las Vegas Jiu-Jitsu</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">

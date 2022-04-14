@@ -15,14 +15,11 @@ export default function Home() {
     <div class="jumbotron jumbotron-fluid">
       <div id="coverPhotoContainer">
       <h1 class="display-4" id="textOnCover">Welcome to Las Vegas Jiu-Jitsu</h1>
-        <img src={process.env.PUBLIC_URL + './images/lvjjblack.png'} width="75%" height="860px" class="img-fluid" id="coverPhoto" />
+        <img src={process.env.PUBLIC_URL + './images/teamlogo.png'} width="75%" height="860px" class="img-fluid" id="coverPhoto" />
         <p id="btnOnCover"><Button variant="light" className="btnOnCover" size="lg" href='/Schedule'>View Our Schedule</Button></p>
         </div>
     </div>
     <br />
-    <div className="cardBody">
-      <br />
-    </div>
   <Carousel>
     <Carousel.Item>
       <img
