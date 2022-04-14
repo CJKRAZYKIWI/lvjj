@@ -2,7 +2,6 @@ import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Button from 'react-bootstrap/Button'
 
 
 export default function News() {
@@ -12,10 +11,9 @@ export default function News() {
       <Row>
         <Col md={{ span: 6, offset: 1 }} >
           <Card style={{ width: '25rem' }} className="cardBackground">
-            <Card.Img variant="top" src="./images/sponsorship.jpg" />
+            <Card.Img variant="top" src="./images/sponsor.jpg" />
             <Card.Body>
               <Card.Title>Steve Dimopoulos sends 10 students to Connecticut Seminar</Card.Title>
-              <Button variant="outline-primary">Read More</Button>
               </Card.Body>
               <Card.Footer className="text-muted">Updated March 4, 2022</Card.Footer>
           </Card>  

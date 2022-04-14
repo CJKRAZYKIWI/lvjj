@@ -81,6 +81,13 @@
     background-color: #1B1B1B !important;
 }
 
+.carouselContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
 /*******************
     Instructors
 *******************/
@@ -88,6 +95,10 @@
     background-color: #1B1B1B;
     border-radius: 16px;
     margin-top: 35px;
+}
+
+.zamoraPhoto {
+    border-radius: 16px;
 }
 
 
@@ -115,4 +126,18 @@ tr, th {
 
 #classTime {
     color: white;
+}
+
+/*******************
+    ABOUT
+*******************/
+
+.aboutContainer {
+    background-color: #1B1B1B;
+    padding: 60px;
+}
+
+.socialMedia {
+    padding: 10px;
+    display: inline-block;
 }

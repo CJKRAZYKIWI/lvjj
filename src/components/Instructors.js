@@ -13,7 +13,7 @@ export default function Instructors() {
         <br />
         <Row>
             <Col>
-            <img src={process.env.PUBLIC_URL + './images/zamora.jpg'} height="505px" width="505px" />
+            <img src={process.env.PUBLIC_URL + './images/zamora2.png'} height="505px" width="505px" className="zamoraPhoto" />
             </Col>
                 <Col className="resumeBody">
                     <h3>Titles:</h3>

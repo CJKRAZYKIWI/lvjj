@@ -20,7 +20,7 @@ export default function Home() {
         </div>
     </div>
     <br />
-  <Carousel>
+  <Carousel className="carouselContainer">
     <Carousel.Item>
       <img
         className="d-block w-100"
@@ -71,7 +71,7 @@ export default function Home() {
           <Card.Img variant="top" src="./images/mial.png" />
           <Card.Title className="CardTitle">Make it a Lifestyle</Card.Title>
             <Card.Body>
-              <Card.Text className="CardText">Come check out our gear!</Card.Text>
+              <Card.Text className="CardText">Apparel shop coming soon!</Card.Text>
               <Card.Subtitle>
                 <center><Button variant="secondary" className="CardButton" disabled>Click Here</Button></center>
               </Card.Subtitle>
@@ -102,7 +102,7 @@ export default function Home() {
             <Card.Img variant="top" src="./images/sponsorship.jpg" />
             <Card.Body>
               <Card.Title>Steve Dimopoulos sends 10 students to Connecticut Seminar</Card.Title>
-              <Button variant="outline-primary">Read More</Button>
+              <Button variant="primary" href="/News">Read More</Button>
               </Card.Body>
               <Card.Footer className="text-muted">Updated March 4, 2022</Card.Footer>
           </Card>  

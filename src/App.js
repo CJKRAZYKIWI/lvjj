@@ -42,7 +42,7 @@ function App() {
       <BrowserRouter>
       <header>
         <Navbar className="NavBar" expand="lg" sticky="top">
-            <Navbar.Brand href="/" style={{color:"white"}}><img src={process.env.PUBLIC_URL + './images/lvjj.png'} height="55" width="55" /> Las Vegas Jiu-Jitsu</Navbar.Brand>
+            <Navbar.Brand href="/" style={{color:"white"}}><img src={process.env.PUBLIC_URL + './images/lvjj-star.png'} height="65" width="65"/> Las Vegas Jiu-Jitsu</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
             </Navbar.Collapse>
