@@ -99,7 +99,7 @@ export default function Home() {
       <Row style={{ textAlign: 'center' }}>
         <Col md={{ span: 6, offset: 4 }} >
           <Card className="cardBackground" id="newsCard">
-            <Card.Img variant="top" src="/images/sponsorship.jpg" />
+            <Card.Img variant="top" src="/images/sponsorship.png" />
             <Card.Body>
               <Card.Title>Steve Dimopoulos sends 10 students to Connecticut Seminar</Card.Title>
               <Button variant="primary" href="/News">Read More</Button>
