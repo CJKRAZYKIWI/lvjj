@@ -1,5 +1,4 @@
 import emailjs from 'emailjs-com'
-import{ init } from '@emailjs/browser';
 import { useRef } from 'react';
 
 import Container from 'react-bootstrap/Container'
@@ -15,7 +14,7 @@ export default function Contact() {
     const sendEmail= (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_u3shsal', 'template_j1ylvjj', form.current, 'B7k1S8XRLntPunrC1')
+        emailjs.sendForm('service_kpvgg81', 'template_rhyfj1r', form.current, 'nbtV07kNcpY0_wX9Z')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
@@ -29,46 +28,35 @@ export default function Contact() {
     return (
     <div style={{ textAlign: 'center' }}>
         <br />
-        <h1 className="contactHeader">Try a class</h1>
+        <h1 className="contactHeader">Come try a class:</h1>
         <Form onSubmit={sendEmail}></Form>
         <br /><br /><br /><br />
         <Container>
-        <Form>
-             <Form>
-                <Row className="mb-3">
-
-                    <Form.Group as={Col} controlId="formGridName" name="firstName" type="input">
-                    <Form.Label>First Name*</Form.Label>
-                    <Form.Control placeholder="First Name" />
-                    </Form.Group>
-    
-                    <Form.Group as={Col} controlId="formGridName" name="lastName" type="input">
-                    <Form.Label>Last Name*</Form.Label>
-                    <Form.Control placeholder="Last Name" />
-                    </Form.Group>
-                </Row>
-    
-                <Form.Group className="mb-3" controlId="formGridAddress1" name="email" type="input">
-                    <Form.Label>Email*</Form.Label>
-                    <Form.Control type="email" placeholder="Your Email"/>
-                </Form.Group>
-    
-                <Form.Group className="mb-3" controlId="formGridAddress2" name="number" type="input">
-                    <Form.Label>Contact Number</Form.Label>
-                    <Form.Control placeholder="Phone Number" />
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1" name="message" type="input">
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
-                </Form.Group>
-                <br />
-                <Button variant="primary" type="submit" value="Send">Submit</Button>
-                <br />
-                <br />
-            </Form>
-        </Form>
-        {/* v */}
+        <form ref={form} onSubmit={sendEmail}>
+        <Row className="mb-3">
+            <Col>
+            <label for="firstName">First Name*</label>
+            <input type="text" name="firstName" className="firstNameBox" />
+            </Col>
+            <Col>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="firstName" className="lastNameBox" />
+            </Col>
+        </Row>
+        <Row className="mb-3">
+            <label for="email">Email</label>
+            <input type="email" name="email" className="infoBox" />
+        </Row>
+        <Row className="mb-3">
+            <label for="phonenumber">Phone*</label>
+            <input type="phone" name="number" className="infoBox" />
+        </Row>
+            <Row className="mb-3">
+            <label for="message">Message</label>
+            <textarea name="message" className="infoBox" />
+        </Row>
+            <input type="submit" value="Send" className="contactBtn" />
+        </form>
         </Container>
         <br />
         <br />

@@ -98,7 +98,7 @@ export default function Home() {
       <center><h1>Latest News</h1></center>
       <Row style={{ textAlign: 'center' }}>
         <Col md={{ span: 6, offset: 4 }} >
-          <Card style={{ width: '25rem' }}  className="cardBackground">
+          <Card style={{ width: '20rem' }}  className="cardBackground">
             <Card.Img variant="top" src="./images/sponsorship.jpg" />
             <Card.Body>
               <Card.Title>Steve Dimopoulos sends 10 students to Connecticut Seminar</Card.Title>

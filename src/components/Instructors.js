@@ -42,23 +42,23 @@ export default function Instructors() {
         <br />
         <Row>
             <Col>
-            <img src={process.env.PUBLIC_URL + './images/bruce.png'} height="505px" width="575px" />
+            <img src={process.env.PUBLIC_URL + './images/bruce.png'} height="505px" width="555px" />
             </Col>
-                <Col className="resumeBody">
+                {/* <Col className="resumeBody">
                     <h4>Titles:</h4>
                     <h4 className="titles">• 2014 IBJJF World NoGi Champion</h4>
                     <h4 className="titles">• 2016 IBJJF World Champion</h4>
                     <h4 className="titles">• 2015 SJJIF World Champion</h4>
                     <h4 className="titles">• 2017 JJWL World Champion</h4>
-                </Col>
+                </Col> */}
         </Row>
         
         <br />
             <Container>
                 <Row>
                 <Col>
-                    <p>Professor Bruce Morgenstern is 2nd degree black belt and received his black belt under Amilcar Cipili. He is a highly decorated jiu jitsu black belt and has over 90 medals during his career.</p>
-                <p>He currently resides in Las Vegas, NV and is the founder and head instructor of Las Vegas Jiu-Jitsu.</p>
+                    <p>Professor Bruce Morgenstern is 2nd degree black belt and received his black belt under Amilcar Cipili.</p>
+                <p>He currently resides in Las Vegas, NV.</p>
                 </Col>
                 </Row>
             </Container>
