@@ -8,7 +8,7 @@ export default function Schedule() {
         <div className="scheduleBody">
         <Container>
             <h1>Schedule</h1>
-            <Table striped bordered hover>
+            <Table striped bordered hover responsive>
                 <thead>
                     <tr>
                         <th>Time</th>

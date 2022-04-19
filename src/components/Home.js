@@ -53,9 +53,9 @@ export default function Home() {
 
 <br />
 <Container>
-      <Row>
+    <Row className="m-auto align-self-center">
       <Col>
-        <Card style={{ width: '25rem' }} className="cardBackground">
+        <Card className="cardBackground" id="aboutCard" fluid>
           <Card.Img variant="top" src="./images/modernlvjj.png" height="245" />
           <Card.Title className="CardTitle">About</Card.Title>
             <Card.Body>
@@ -67,7 +67,7 @@ export default function Home() {
         </Card>
         </Col>    
         <Col>
-        <Card style={{ width: '25rem' }} className="cardBackground">
+        <Card className="cardBackground" id="aboutCard">
           <Card.Img variant="top" src="./images/mial.png" />
           <Card.Title className="CardTitle">Make it a Lifestyle</Card.Title>
             <Card.Body>
@@ -79,7 +79,7 @@ export default function Home() {
         </Card>
         </Col>
         <Col>
-        <Card style={{ width: '25rem' }} className="cardBackground">
+        <Card className="cardBackground" id="aboutCard">
           <Card.Img variant="top" src="./images/lasvegasjj2.png" />
           <Card.Title className="CardTitle">Interested in joining us?</Card.Title>
             <Card.Body>
@@ -98,7 +98,7 @@ export default function Home() {
       <center><h1>Latest News</h1></center>
       <Row style={{ textAlign: 'center' }}>
         <Col md={{ span: 6, offset: 4 }} >
-          <Card style={{ width: '20rem' }}  className="cardBackground">
+          <Card className="cardBackground" id="newsCard">
             <Card.Img variant="top" src="./images/sponsorship.jpg" />
             <Card.Body>
               <Card.Title>Steve Dimopoulos sends 10 students to Connecticut Seminar</Card.Title>

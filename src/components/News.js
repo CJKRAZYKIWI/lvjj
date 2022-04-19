@@ -10,11 +10,11 @@ export default function News() {
     <h1>Team News</h1>
       <Row>
         <Col md={{ span: 6, offset: 1 }} >
-          <Card style={{ width: '25rem' }} className="cardBackground">
+          <Card className="cardBackground" id="newsCard">
             <Card.Img variant="top" src="./images/sponsor.jpg" />
             <Card.Body>
               <Card.Title>Steve Dimopoulos sends 10 students to Connecticut Seminar</Card.Title>
-              <Card.Text>Steve Dimopoulos Injury Law of Las Vegas sponsors Las Vegas Jiu-Jitsu and sends 10 students to Connecticut for an Invictus Seminar!</Card.Text>
+              <Card.Text id="newsText">Steve Dimopoulos Injury Law of Las Vegas sponsors Las Vegas Jiu-Jitsu and sends 10 students to Connecticut for an Invictus Seminar!</Card.Text>
               </Card.Body>
               <Card.Footer className="text-muted">Updated March 4, 2022</Card.Footer>
           </Card>  

@@ -8,6 +8,7 @@
 
 .Card {
     padding: 25px;
+    border: 1px solid red !important;
 }
 
 .CardTitle {
@@ -18,20 +19,45 @@
     text-align: center;
 }
 
+/*******************
+    NAVBAR
+*******************/
+
 .NavBar {
     font-size: 18px;
     padding: 25px;
     background-color: #1B1B1B;
 }
 
-.titles {
-    padding: 25px;
-}
-
 
 .pageFooter {
     margin-top: 10px;
     background-color: #1B1B1B;
+}
+
+
+#navBar-toggle {
+    background-color: rgb(196, 196, 196);
+}
+
+.navBar-li {
+    padding: 1rem !important;
+    text-align: center;
+}
+
+.navBar-li:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 480px) {
+    #logoTest {
+        display: none;
+    }
+
+    .navbar-toggler-icon {
+        background-color: rgb(196, 196, 196) !important;
+    }
+
 }
 
 /*******************
@@ -85,7 +111,43 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 90%;
+}
+
+#aboutCard {
+    width: 25rem;
+}
+
+#newsCard {
+    width: 25rem;
+}
+
+@media screen and (max-width: 480px) {
+    .carouselContainer {
+        width: 100%;
+    }
+
+
+    #textOnCover {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #aboutCard {
+        margin-bottom: 20px;
+        width: 18rem;
+        left: 5%;
+    }
+
+    #newsCard {
+        width: 18rem;
+        left: 7%;
+    }
+
+    #newsText {
+        color: rgb(136, 136, 136);
+    }
 }
 
 /*******************
@@ -97,7 +159,7 @@
     margin-top: 35px;
 }
 
-.zamoraPhoto {
+#zamoraPhoto {
     border-radius: 16px;
 }
 
@@ -109,6 +171,43 @@
 
 .bruceBody {
     background-color: #000000;
+}
+
+#brucePhoto {
+    border-radius: 16px;
+}
+
+@media screen and (max-width: 480px) {
+    #colTest {
+        width: 100%;
+        height: 100%;
+    }
+
+    #resumeBody {
+        text-align: center !important;
+        width: 100%;
+        display: none;
+    }
+
+    #zamoraPhoto {
+        height: 100%;
+        width: 100%;
+    }
+
+    .titlesHeader {
+        font-size: 18px;
+        display: none;
+    }
+
+    .titles {
+        font-size: 16px;
+        display: none;
+    }
+
+    .instructorDescription {
+        font-size: 18px;
+    }
+    
 }
 
 /*******************
@@ -126,6 +225,13 @@ tr, th {
 
 #classTime {
     color: white;
+}
+
+@media screen and (max-width: 480px) {
+    #calendar {
+        border: solid 1px red;
+        width: 20rem;
+    }
 }
 
 /*******************
@@ -166,3 +272,4 @@ tr, th {
     border-radius: 8px;
     text-align: center;
 }
+
