@@ -56,7 +56,7 @@ export default function Home() {
     <Row className="m-auto align-self-center">
       <Col>
         <Card className="cardBackground" id="aboutCard" fluid>
-          <Card.Img variant="top" src="./images/modernlvjj.png" height="245" />
+          <Card.Img variant="top" src="/images/modernlvjj.png" height="245" />
           <Card.Title className="CardTitle">About</Card.Title>
             <Card.Body>
               <Card.Text className="CardText">Click below to learn more about us!</Card.Text>
@@ -68,7 +68,7 @@ export default function Home() {
         </Col>    
         <Col>
         <Card className="cardBackground" id="aboutCard">
-          <Card.Img variant="top" src="./images/mial.png" />
+          <Card.Img variant="top" src="/images/mial.png" />
           <Card.Title className="CardTitle">Make it a Lifestyle</Card.Title>
             <Card.Body>
               <Card.Text className="CardText">Apparel shop coming soon!</Card.Text>
@@ -80,7 +80,7 @@ export default function Home() {
         </Col>
         <Col>
         <Card className="cardBackground" id="aboutCard">
-          <Card.Img variant="top" src="./images/lasvegasjj2.png" />
+          <Card.Img variant="top" src="/images/lasvegasjj2.png" />
           <Card.Title className="CardTitle">Interested in joining us?</Card.Title>
             <Card.Body>
               <Card.Text className="CardText">Click below to contact us!</Card.Text>
