@@ -6,6 +6,6 @@ I created this webpage for LVJJ due to Cresencio's constant selfless actions and
 
 As a former law enforcement officer, I wanted to support Cresencio due to his unselfishness and strong passion to help other's better themselves.
 
-This webpage was created with React, React-Bootstrap, and deployed with AWS.
+This webpage was drawn out with Figma, written with React and React-Bootstrap, and lastly deployed with Amazon Web Services(AWS). Photoshop was also within this project.
 
-This webpage was created by Andrew Tapalla. All LVJJ logos and images is owned by Cresencio Zamora.
+<i>This webpage was created by Andrew Tapalla. All LVJJ logos and images is owned by Cresencio Zamora.</i>
