@@ -56,7 +56,7 @@ export default function Home() {
     <Row className="m-auto align-self-center">
       <Col>
         <Card className="cardBackground" id="aboutCard" fluid>
-          <Card.Img variant="top" src="/images/modernlvjj.png" height="245" />
+          <Card.Img variant="top" src="/images/ModernLVJJ.png" height="245" />
           <Card.Title className="CardTitle">About</Card.Title>
             <Card.Body>
               <Card.Text className="CardText">Click below to learn more about us!</Card.Text>
