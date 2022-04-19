@@ -1,4 +1,4 @@
-<h1>Welcome to my Las Vegas Jiu-Jitsu github repository!</h1>
+<h1>Welcome to the Las Vegas Jiu-Jitsu github repository!</h1>
 
 Las Vegas Jiu-Jitsu (LVJJ) founder Cresencio Zamora created and built this team with his own time and money. Everything within the gym from the MIAL apparel, jiu-jitsu mats, to the disinfectants are all bought by Cresencio or donated by other students. 
 
