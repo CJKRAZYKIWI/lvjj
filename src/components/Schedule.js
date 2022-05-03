@@ -166,7 +166,7 @@ export default function Schedule() {
             </Table>
         </Container>
         <p>* Open mat schedule subject to change on a weekly basis.</p>
-        <br />
+        <br /><br /><br />
         <br />
         <br />
         </div>
