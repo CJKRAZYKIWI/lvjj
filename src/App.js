@@ -17,6 +17,7 @@ import Shop from './components/Shop'
 import Contact from './components/Contact'
 import News from './components/News'
 import Footer from './components/Footer'
+import Account from './components/Account'
 
 function App() {
   const [data, setData] = useState()
@@ -52,6 +53,7 @@ function App() {
                 <Nav.Link href="/Schedule" style={{color:"white"}} className="navBar-li">Schedule</Nav.Link>
                 <Nav.Link href="/News" style={{color:"white"}} className="navBar-li">News</Nav.Link>
                 <Nav.Link href="/Contact" style={{color:"white"}} className="navBar-li">Contact</Nav.Link>
+                <Nav.Link href="/Account" style={{color:"white"}} className="navBar-li" id="accountBtn">Account</Nav.Link>
               </Nav>
               </Navbar.Collapse>
         </Navbar>
@@ -64,6 +66,7 @@ function App() {
             <Route path="/Shop" element={<Shop />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/News" element={<News />} />
+            <Route path="/Account" element={<Account />} />
         </Routes>
       </header>
       </BrowserRouter>
