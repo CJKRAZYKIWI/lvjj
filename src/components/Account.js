@@ -1,5 +1,5 @@
 export default function Account() {
     return(
-    <h1>Hello Account World</h1>
+    <h1>My Account </h1>
     )
 }
