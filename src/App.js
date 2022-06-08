@@ -18,7 +18,7 @@ import News from './components/News'
 import Footer from './components/Footer'
 import Testimonials from './components/Testimonials/Testimonials'
 import Form from './components/Form/Form'
-import Account from './components/Account'
+import Account from './components/Account/Account'
 
 function App() {
   const [data, setData] = useState()
@@ -71,6 +71,8 @@ function App() {
             <Route path="/Account" element={<Account />} />
             <Route path="/Form" element={<Form />} />
             <Route path="/Testimonials" element={<Testimonials />} />
+            <Route path="/Account" element={<Account />} />
+
         </Routes>
       </header>
       </BrowserRouter>

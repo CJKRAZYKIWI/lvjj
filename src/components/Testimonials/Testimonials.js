@@ -11,18 +11,19 @@ export default function Testimonials() {
     <Container>
     <br />
         <h1>Las Vegas Jiu-Jitsu Testimonials</h1>
+    <br />
     <hr />
-    <h1>Reviews</h1>
+    <h1>Testimonies</h1>
+    <br />
+    {/* Reviews go in here? */}
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <b>Gordon Ryan 5/5</b>
     <br /><br />
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-    <b>Carlson Gracie 4/5</b>
     <hr />
     <br />
     <Row> 
         <Col>
-            <h3>Leave a rating</h3>
+            <h3>Leave a review</h3>
         </Col> 
     </Row>
     <br />
@@ -33,8 +34,9 @@ export default function Testimonials() {
         </Col>
     </Row>
     <br />
-    <Button>Add Review</Button>
+    <Button>Add</Button>
     </Container>
+    <br /><br />
     </>    
     )
 }
