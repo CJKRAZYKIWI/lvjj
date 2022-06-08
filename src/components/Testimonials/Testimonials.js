@@ -26,7 +26,7 @@ export default function Testimonials() {
             <h3>Leave a review</h3>
         </Col> 
     </Row>
-    <br />
+    <br /><br />
     <Row>  
         <Col>
             <label for="message">Your Review</label>
