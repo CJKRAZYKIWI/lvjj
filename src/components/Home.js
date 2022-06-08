@@ -28,7 +28,7 @@ export default function Home() {
   }, []);
     return(
     <>
-        <div className="container">
+    <div className="container">
       <header className="jumbotron">
         <h3>{content}</h3>
       </header>
