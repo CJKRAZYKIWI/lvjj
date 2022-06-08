@@ -1,6 +1,7 @@
+import React, { useState, useEffect } from "react";
+import UserService from "../services/user.service";
+
 import Carousel from 'react-bootstrap/Carousel'
-
-
 import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
@@ -10,8 +11,29 @@ import Button from 'react-bootstrap/Button'
 
 
 export default function Home() {
+  const [content, setContent] = useState("");
+  useEffect(() => {
+    UserService.getPublicContent().then(
+      (response) => {
+        setContent(response.data);
+      },
+      (error) => {
+        const _content =
+          (error.response && error.response.data) ||
+          error.message ||
+          error.toString();
+        setContent(_content);
+      }
+    );
+  }, []);
     return(
     <>
+        <div className="container">
+      <header className="jumbotron">
+        <h3>{content}</h3>
+      </header>
+    </div>
+
     <div class="jumbotron jumbotron-fluid">
       <div id="coverPhotoContainer">
       <h1 class="display-4" id="textOnCover">Welcome to Las Vegas Jiu-Jitsu</h1>
