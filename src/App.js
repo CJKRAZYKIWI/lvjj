@@ -16,6 +16,7 @@ import Shop from './components/Shop'
 import Contact from './components/Contact'
 import News from './components/News'
 import Footer from './components/Footer'
+import Testimonials from './components/Testimonials/Testimonials'
 import Account from './components/Account'
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
                 <Nav.Link href="/Instructors" style={{color:"white"}} className="navBar-li">Instructors</Nav.Link>
                 <Nav.Link href="/Schedule" style={{color:"white"}} className="navBar-li">Schedule</Nav.Link>
                 <Nav.Link href="/News" style={{color:"white"}} className="navBar-li">News</Nav.Link>
+                <Nav.Link href="/Testimonials" style={{color:"white"}} className="navBar-li">Testimonials</Nav.Link>
                 <Nav.Link href="/Contact" style={{color:"white"}} className="navBar-li">Contact</Nav.Link>
                 <Nav.Link href="/Account" style={{color:"white"}} className="navBar-li" id="accountBtn">Account</Nav.Link>
               </Nav>
@@ -66,6 +68,8 @@ function App() {
             <Route path="/Contact" element={<Contact />} />
             <Route path="/News" element={<News />} />
             <Route path="/Account" element={<Account />} />
+            <Route path="/Testimonials" element={<Testimonials />} />
+
         </Routes>
       </header>
       </BrowserRouter>
