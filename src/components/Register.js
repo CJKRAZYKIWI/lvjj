@@ -1,10 +1,13 @@
 import React, { useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
+
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import { isEmail } from "validator";
+
 import { register } from "../actions/auth";
+
 const required = (value) => {
   if (!value) {
     return (
@@ -14,6 +17,7 @@ const required = (value) => {
     );
   }
 };
+
 const validEmail = (value) => {
   if (!isEmail(value)) {
     return (
@@ -23,6 +27,7 @@ const validEmail = (value) => {
     );
   }
 };
+
 const vusername = (value) => {
   if (value.length < 3 || value.length > 20) {
     return (
@@ -32,6 +37,7 @@ const vusername = (value) => {
     );
   }
 };
+
 const vpassword = (value) => {
   if (value.length < 6 || value.length > 40) {
     return (
@@ -41,31 +47,41 @@ const vpassword = (value) => {
     );
   }
 };
+
 const Register = () => {
   const form = useRef();
   const checkBtn = useRef();
+
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [successful, setSuccessful] = useState(false);
+
   const { message } = useSelector(state => state.message);
   const dispatch = useDispatch();
+
   const onChangeUsername = (e) => {
     const username = e.target.value;
     setUsername(username);
   };
+
   const onChangeEmail = (e) => {
     const email = e.target.value;
     setEmail(email);
   };
+
   const onChangePassword = (e) => {
     const password = e.target.value;
     setPassword(password);
   };
+
   const handleRegister = (e) => {
     e.preventDefault();
+
     setSuccessful(false);
+
     form.current.validateAll();
+
     if (checkBtn.current.context._errors.length === 0) {
       dispatch(register(username, email, password))
         .then(() => {
@@ -76,6 +92,7 @@ const Register = () => {
         });
     }
   };
+
   return (
     <div className="col-md-12">
       <div className="card card-container">
@@ -84,6 +101,7 @@ const Register = () => {
           alt="profile-img"
           className="profile-img-card"
         />
+
         <Form onSubmit={handleRegister} ref={form}>
           {!successful && (
             <div>
@@ -98,6 +116,7 @@ const Register = () => {
                   validations={[required, vusername]}
                 />
               </div>
+
               <div className="form-group">
                 <label htmlFor="email">Email</label>
                 <Input
@@ -109,6 +128,7 @@ const Register = () => {
                   validations={[required, validEmail]}
                 />
               </div>
+
               <div className="form-group">
                 <label htmlFor="password">Password</label>
                 <Input
@@ -120,11 +140,13 @@ const Register = () => {
                   validations={[required, vpassword]}
                 />
               </div>
+
               <div className="form-group">
                 <button className="btn btn-primary btn-block">Sign Up</button>
               </div>
             </div>
           )}
+
           {message && (
             <div className="form-group">
               <div className={ successful ? "alert alert-success" : "alert alert-danger" } role="alert">
@@ -138,4 +160,5 @@ const Register = () => {
     </div>
   );
 };
+
 export default Register;

@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
+
 import UserService from "../services/user.service";
+import EventBus from "../common/EventBus";
+
 const BoardUser = () => {
   const [content, setContent] = useState("");
+
   useEffect(() => {
     UserService.getUserBoard().then(
       (response) => {
@@ -14,10 +18,16 @@ const BoardUser = () => {
             error.response.data.message) ||
           error.message ||
           error.toString();
+
         setContent(_content);
+
+        if (error.response && error.response.status === 401) {
+          EventBus.dispatch("logout");
+        }
       }
     );
   }, []);
+
   return (
     <div className="container">
       <header className="jumbotron">
@@ -26,4 +36,5 @@ const BoardUser = () => {
     </div>
   );
 };
+
 export default BoardUser;
