@@ -17,6 +17,7 @@ import Contact from './components/Contact'
 import News from './components/News'
 import Footer from './components/Footer'
 import Testimonials from './components/Testimonials/Testimonials'
+import Form from './components/Form/Form'
 import Account from './components/Account'
 
 function App() {
@@ -68,8 +69,8 @@ function App() {
             <Route path="/Contact" element={<Contact />} />
             <Route path="/News" element={<News />} />
             <Route path="/Account" element={<Account />} />
+            <Route path="/Form" element={<Form />} />
             <Route path="/Testimonials" element={<Testimonials />} />
-
         </Routes>
       </header>
       </BrowserRouter>
