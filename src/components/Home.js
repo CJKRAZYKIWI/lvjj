@@ -1,6 +1,7 @@
+import React, { useState, useEffect } from "react";
+import UserService from "../services/user.service";
+
 import Carousel from 'react-bootstrap/Carousel'
-
-
 import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
@@ -8,13 +9,39 @@ import Col from 'react-bootstrap/Col'
 import CardGroup from 'react-bootstrap/CardGroup'
 import Button from 'react-bootstrap/Button'
 
+import { useSelector } from "react-redux";
 
 export default function Home() {
+  const { user: currentUser } = useSelector((state) => state.auth);
+
+  const [content, setContent] = useState("");
+  useEffect(() => {
+    UserService.getPublicContent().then(
+      (response) => {
+        setContent(response.data);
+      },
+      (error) => {
+        const _content =
+          (error.response && error.response.data) ||
+          error.message ||
+          error.toString();
+        setContent(_content);
+      }
+    );
+  }, []);
     return(
     <>
+    <div className="container">
+      <header className="jumbotron">
+        <h3>{content}</h3>
+      </header>
+    </div>
+
     <div class="jumbotron jumbotron-fluid">
       <div id="coverPhotoContainer">
-      <h1 class="display-4" id="textOnCover">Welcome to Las Vegas Jiu-Jitsu</h1>
+      <h1 class="display-4" id="textOnCover">
+        Welcome to Las Vegas Jiu-Jitsu { currentUser && <>, Andrew</> }
+        </h1>
         <img src={process.env.PUBLIC_URL + './images/teamlogo.png'} width="75%" height="860px" class="img-fluid" id="coverPhoto" />
         <p id="btnOnCover"><Button variant="light" className="btnOnCover" size="lg" href='/Schedule'>View Our Schedule</Button></p>
         </div>

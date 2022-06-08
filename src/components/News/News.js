@@ -4,6 +4,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 
+import './News.css'
+
 export default function News() {
     return (
     <Container>
@@ -22,12 +24,12 @@ export default function News() {
               <Card.Footer className="text-muted">Updated March 4, 2022</Card.Footer>
           </Card>  
         </Col>
-        <Col >
+        <Col>
           <Card className="cardBackground" id="newsCard">
             <Card.Img variant="top" src="./images/promoted.jpg" />
             <Card.Body>
-              <Card.Title>Say congratulations to our newly promoted students! </Card.Title>
-              <Card.Text id="newsText"></Card.Text>
+              <Card.Title>It's promotion night at LVJJ</Card.Title>
+              <Card.Text id="newsText">Say congratulations to our newly promoted!</Card.Text>
               </Card.Body>
               <Card.Footer className="text-muted">Updated June 8, 2022</Card.Footer>
           </Card>  
