@@ -6,7 +6,9 @@ import {
     LOGOUT,
     SET_MESSAGE,
   } from "./types";
+
   import AuthService from "../services/auth.service";
+
   export const register = (username, email, password) => (dispatch) => {
     return AuthService.register(username, email, password).then(
       (response) => {
@@ -37,6 +39,7 @@ import {
       }
     );
   };
+
   export const login = (username, password) => (dispatch) => {
     return AuthService.login(username, password).then(
       (data) => {
@@ -64,6 +67,7 @@ import {
       }
     );
   };
+  
   export const logout = () => (dispatch) => {
     AuthService.logout();
     dispatch({
