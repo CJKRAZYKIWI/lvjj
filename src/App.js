@@ -18,6 +18,8 @@ import Contact from './components/Contact'
 import News from './components/News/News'
 import Footer from './components/Footer'
 import Account from './components/Account'
+import Testimonials from './components/Testimonials/Testimonials'
+
 
 import { logout } from "./actions/auth";
 import { clearMessage } from "./actions/message";
@@ -57,6 +59,7 @@ function App() {
               <Nav.Link href="/Instructors" style={{color:"white"}} className="navBar-li">Instructors</Nav.Link>
               <Nav.Link href="/Schedule" style={{color:"white"}} className="navBar-li">Schedule</Nav.Link>
               <Nav.Link href="/News" style={{color:"white"}} className="navBar-li">News</Nav.Link>
+              <Nav.Link href="/Testimonials" style={{color:"white"}} className="navBar-li">Testimonials</Nav.Link>
               <Nav.Link href="/Contact" style={{color:"white"}} className="navBar-li">Contact</Nav.Link>
               { currentUser
                 ?
@@ -78,6 +81,7 @@ function App() {
           <Route path="/Shop" element={<Shop />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/News" element={<News />} />
+          <Route path="/Testimonials" element={<Testimonials />} />
           <Route path="/Account" element={<Account />} />
       </Routes>
     </header>
